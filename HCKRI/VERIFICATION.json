@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-11-13T01:12:04.796723+00:00",
+  "unit_tests_passed": 28,
+  "python": "3.12.7",
+  "platform": "Windows",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.5.1",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.2",
+    "torch": "2.5.1+cpu"
+  },
+  "synthetic_flow_checks": [
+    {
+      "name": "smoke_variants",
+      "trainings": 8,
+      "data": "synthetic only",
+      "saved_prediction_metrics_recomputed": true
+    },
+    {
+      "name": "smoke_grid",
+      "trainings": 4,
+      "data": "synthetic only",
+      "saved_prediction_metrics_recomputed": true
+    }
+  ],
+  "core_source_hashes_match": true,
+  "real_dataset_reproduction_performed": false,
+  "privacy_scan": "allowlisted files; no detected credential patterns or private workstation paths"
+}

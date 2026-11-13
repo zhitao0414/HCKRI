@@ -1,0 +1,67 @@
+{
+  "data": {
+    "data_dir": "data/raw/TON_IoT/network_multiview",
+    "file_glob": "*.csv",
+    "auto_download": false,
+    "download_url": "",
+    "download_filename": "",
+    "download_sha256": "",
+    "download_timeout": 240,
+    "max_rows_per_file": 6000,
+    "max_rows_per_source": 6000,
+    "align_sources_by_rank": true,
+    "sequence_length": 12,
+    "stride": 3,
+    "val_size": 0.15,
+    "test_size": 0.2,
+    "labeled_fraction": 0.3,
+    "numeric_hash_dim": 64,
+    "categorical_hash_dim": 32,
+    "allow_synthetic_fallback": false,
+    "synthetic_samples": 2500,
+    "seed": 42,
+    "risk_level_names": ["正常", "一般风险", "较大风险", "重大风险", "特别重大风险"],
+    "risk_type_level_map": {
+      "normal": 0,
+      "scanning": 1,
+      "scan": 1,
+      "password": 2,
+      "xss": 2,
+      "injection": 3,
+      "dos": 3,
+      "ddos": 3,
+      "backdoor": 4,
+      "mitm": 4,
+      "ransomware": 4,
+      "malware": 4,
+      "data_exfiltration": 4
+    },
+    "unknown_attack_types": ["mitm", "ransomware"]
+  },
+  "model": {
+    "model_dim": 64,
+    "source_embedding_dim": 16,
+    "cnn_kernel_sizes": [3, 5, 7],
+    "lstm_hidden": 64,
+    "transformer_layers": 2,
+    "transformer_heads": 4,
+    "dropout": 0.2
+  },
+  "train": {
+    "epochs": 8,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "semi_supervised_weight": 0.35,
+    "contrastive_weight": 0.1,
+    "pseudo_label_threshold": 0.9,
+    "prototype_temperature": 0.2,
+    "anomaly_threshold": 0.5,
+    "unknown_confidence_threshold": 0.55,
+    "device": "auto",
+    "seed": 42
+  },
+  "output": {
+    "results_path": "outputs/ton_iot_multiview_risk_results.json"
+  }
+}

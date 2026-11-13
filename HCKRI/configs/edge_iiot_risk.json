@@ -1,0 +1,70 @@
+{
+  "data": {
+    "data_dir": "data/raw/Edge_IIoTset",
+    "file_glob": "*.csv",
+    "auto_download": true,
+    "download_url": "https://huggingface.co/datasets/Sunayanajagadesh/ML_EdgeIIoT_dataset/resolve/main/ML-EdgeIIoT-dataset.csv?download=true",
+    "download_filename": "ML-EdgeIIoT-dataset.csv",
+    "download_sha256": "",
+    "download_timeout": 240,
+    "max_rows_per_file": 30000,
+    "sequence_length": 12,
+    "stride": 3,
+    "val_size": 0.15,
+    "test_size": 0.2,
+    "labeled_fraction": 0.3,
+    "numeric_hash_dim": 64,
+    "categorical_hash_dim": 32,
+    "allow_synthetic_fallback": false,
+    "synthetic_samples": 2500,
+    "seed": 42,
+    "risk_level_names": ["正常", "一般风险", "较大风险", "重大风险", "特别重大风险"],
+    "risk_type_level_map": {
+      "normal": 0,
+      "port_scanning": 1,
+      "vulnerability_scanner": 1,
+      "fingerprinting": 1,
+      "password": 2,
+      "xss": 2,
+      "uploading": 2,
+      "sql_injection": 3,
+      "ddos_udp": 3,
+      "ddos_icmp": 3,
+      "ddos_http": 3,
+      "ddos_tcp": 3,
+      "backdoor": 4,
+      "mitm": 4,
+      "ransomware": 4
+    },
+    "unknown_attack_types": ["mitm", "ransomware"],
+    "label_columns": ["Attack_label", "label", "Label", "attack", "Attack", "is_attack", "is_anomaly"],
+    "type_columns": ["Attack_type", "type", "Type", "attack_type", "Attack_type", "category", "Category"],
+    "timestamp_columns": ["timestamp", "Timestamp", "date", "Date", "datetime"]
+  },
+  "model": {
+    "model_dim": 64,
+    "source_embedding_dim": 16,
+    "cnn_kernel_sizes": [3, 5, 7],
+    "lstm_hidden": 64,
+    "transformer_layers": 2,
+    "transformer_heads": 4,
+    "dropout": 0.2
+  },
+  "train": {
+    "epochs": 8,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "semi_supervised_weight": 0.35,
+    "contrastive_weight": 0.1,
+    "pseudo_label_threshold": 0.9,
+    "prototype_temperature": 0.2,
+    "anomaly_threshold": 0.5,
+    "unknown_confidence_threshold": 0.55,
+    "device": "auto",
+    "seed": 42
+  },
+  "output": {
+    "results_path": "outputs/edge_iiot_risk_results.json"
+  }
+}

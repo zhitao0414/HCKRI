@@ -1,0 +1,229 @@
+{
+  "created_utc": "2026-11-13T01:08:45.929518+00:00",
+  "name": "HCKRI",
+  "raw_data_included": false,
+  "weights_included": false,
+  "baseline_reproductions_included": false,
+  "license": "not selected by the author",
+  "files": {
+    "src/power_risk/__init__.py": {
+      "origin": "src/power_risk/__init__.py",
+      "sha256": "59bd1faa10915fedd44d666ebe18970008e874fff8443213e70a314c59415925"
+    },
+    "src/power_risk/ablations.py": {
+      "origin": "src/power_risk/ablations.py",
+      "sha256": "4db4081e62d029db3f02604189198d3ab4f5cfee206121c85dad699e482b7891"
+    },
+    "src/power_risk/comparison_ablations.py": {
+      "origin": "src/power_risk/comparison_ablations.py",
+      "sha256": "88173169eabce28bdb226dbff0b87e223f9ff1d75cd5fad7e7c22b68638ca521"
+    },
+    "src/power_risk/config.py": {
+      "origin": "src/power_risk/config.py",
+      "sha256": "89a31908615df6d6ff2f4ad1fb304baeb7ec5a313ef5cec33fe6af0c7fc7e245"
+    },
+    "src/power_risk/data.py": {
+      "origin": "src/power_risk/data.py",
+      "sha256": "16740ce4d713cdad3d1dc8d3afe4380b946b49821ad1ae1d1fec68af824314d8"
+    },
+    "src/power_risk/download.py": {
+      "origin": "src/power_risk/download.py",
+      "sha256": "b6d6859eb824e2b8130f18cacd7c484a2dc3f2589a4de45f33d3948f9fcdc371"
+    },
+    "src/power_risk/mechanism_ablations.py": {
+      "origin": "src/power_risk/mechanism_ablations.py",
+      "sha256": "dc47a0a44ed8436db6cecdec5684f1bbbccafa16087a53a8473549118bfe0f33"
+    },
+    "src/power_risk/metrics.py": {
+      "origin": "src/power_risk/metrics.py",
+      "sha256": "d5042fdbc090534e3b33cb026328e7fafaf548c0083ddf5631dd0c240931c8e8"
+    },
+    "src/power_risk/model.py": {
+      "origin": "src/power_risk/model.py",
+      "sha256": "b09074dd45300c0d43dd5088a1090264d46ac0f173b08420d161d845e4ba0c71"
+    },
+    "src/power_risk/reporting.py": {
+      "origin": "src/power_risk/reporting.py",
+      "sha256": "f02f7c0f3b01c4de80ecb859f08bd9ad47c001a6965239a4337247a4c94fede9"
+    },
+    "src/power_risk/visualization.py": {
+      "origin": "src/power_risk/visualization.py",
+      "sha256": "c3d4ab2f9b6a48b3a738eed73cef28ec693ab096ab213cd1c493d544de0d8e10"
+    },
+    "scripts/train_ton_iot_risk.py": {
+      "origin": "scripts/train_ton_iot_risk.py",
+      "sha256": "c1eef938a9825fefb99bc218bfe876ea5e8ba12e21d9c8c918c5cfc30f2579dc"
+    },
+    "scripts/run_ablation_study.py": {
+      "origin": "scripts/run_ablation_study.py",
+      "sha256": "da600ee1e4cf9fe06a6d294951d3408269d6563174ec6c7ae85b755a722c7743"
+    },
+    "scripts/run_learning_ablation.py": {
+      "origin": "scripts/run_learning_ablation.py",
+      "sha256": "58a264343e1a949d2d9c9bc065685240e8121cb34a94546b20d2df8628f8e30b"
+    },
+    "scripts/run_mechanism_ablation.py": {
+      "origin": "scripts/run_mechanism_ablation.py",
+      "sha256": "a0f999971391c009512f039d8f77c1b7be8efd6e3ad4809e1fd740ca66b0d07f"
+    },
+    "scripts/prepare_power_system_attack_dataset.py": {
+      "origin": "scripts/prepare_power_system_attack_dataset.py",
+      "sha256": "342cbc764fa3a2024e58e7d9a54863518e09d2c6989cb47a57a6ea661b61ea99"
+    },
+    "scripts/prepare_edge_multisource.py": {
+      "origin": "scripts/prepare_edge_multisource.py",
+      "sha256": "57463fefdc802231e90f648305eabdb02d96c3c83a7110ed5dd2e37f12731888"
+    },
+    "scripts/prepare_ton_multiview.py": {
+      "origin": "scripts/prepare_ton_multiview.py",
+      "sha256": "66463469cf394aeb22ba56d275cd483047b6e9f48747891df61bc2bee4b93504"
+    },
+    "tests/test_comparison_ablation.py": {
+      "origin": "tests/test_comparison_ablation.py",
+      "sha256": "9613beb0d8e2dae8fda09d89a58ce7cfcbdf48ec7258ef3c022062fa5a05509c"
+    },
+    "tests/test_learning_ablation.py": {
+      "origin": "tests/test_learning_ablation.py",
+      "sha256": "e6b570d0868539f126d1be75b151c6068aca3f665614148d2b0bb5ad2cf44073"
+    },
+    "tests/test_mechanism_ablation.py": {
+      "origin": "tests/test_mechanism_ablation.py",
+      "sha256": "cb957d92762086ba03a4c1773c5f557c167d47ee6ffaf2c55cdc62e32c84f30b"
+    },
+    "tests/test_source_numeric_encoding.py": {
+      "origin": "tests/test_source_numeric_encoding.py",
+      "sha256": "40febff150d998641acacee97620825fc4fef40a266296e742be926d3310c732"
+    },
+    "configs/edge_iiot_ablation_long_window.json": {
+      "origin": "configs/edge_iiot_ablation_long_window.json",
+      "sha256": "449b466f99585b866c21ada8c16b364b4ff31aa28e972df1e16d3319b2f98b53"
+    },
+    "configs/edge_iiot_full_risk.json": {
+      "origin": "configs/edge_iiot_full_risk.json",
+      "sha256": "9b50954fa3e3544e65a95ddac2b9f96b1f4700d1cc6073915dbab2a7c3ac0241"
+    },
+    "configs/edge_iiot_multisource_risk.json": {
+      "origin": "configs/edge_iiot_multisource_risk.json",
+      "sha256": "b82a2c53f2d6dc06a8f7894249cc832337a5b920194b3bb580a1e91623440a61"
+    },
+    "configs/edge_iiot_risk.json": {
+      "origin": "configs/edge_iiot_risk.json",
+      "sha256": "dd2784e39e7da5507db46a15424cc9ba381ff66ad2604bad4a774fccf10dbd99"
+    },
+    "configs/power_system_attack_ablation_long_window.json": {
+      "origin": "configs/power_system_attack_ablation_long_window.json",
+      "sha256": "30caed77b3634682c0ee1469eb6b68933b696e041b98e2eef60063e93824c817"
+    },
+    "configs/power_system_attack_risk.json": {
+      "origin": "configs/power_system_attack_risk.json",
+      "sha256": "b9ab276ebb03e6f4c69efee6d62aba969370a29d4cbc5b6b95ff6df72bfdad47"
+    },
+    "configs/power_system_attack_risk_seed9300.json": {
+      "origin": "configs/power_system_attack_risk_seed9300.json",
+      "sha256": "3cb8322d926d463692ab529f0384b4a0c5370da0a790080fb55964e606c00f2e"
+    },
+    "configs/power_system_attack_source_contribution.json": {
+      "origin": "configs/power_system_attack_source_contribution.json",
+      "sha256": "3984e2059ea790122e59da6a93687c8ded259a53575f2dca322cd3474b4afa2a"
+    },
+    "configs/ton_iot_ablation_long_window.json": {
+      "origin": "configs/ton_iot_ablation_long_window.json",
+      "sha256": "920d9138191af226c956aecd1df821fe854fb0b341e44afe8dc9d032c0a173b8"
+    },
+    "configs/ton_iot_full_risk.json": {
+      "origin": "configs/ton_iot_full_risk.json",
+      "sha256": "12a553ea6547a06a1ccc1ca11d45efb32550a2256873471d624ee902a9210e48"
+    },
+    "configs/ton_iot_multisource_risk.json": {
+      "origin": "configs/ton_iot_multisource_risk.json",
+      "sha256": "d8cee395aafa0949539d073592de41413699ea641a2da9744a5d5f8e1850fa47"
+    },
+    "configs/ton_iot_multiview_risk.json": {
+      "origin": "configs/ton_iot_multiview_risk.json",
+      "sha256": "471c12e5af43917e600b65b5ced0ea728de20e59b22ad0b7643e33b02f022f5f"
+    },
+    "configs/ton_iot_risk.json": {
+      "origin": "configs/ton_iot_risk.json",
+      "sha256": "de0cd4796d7e13e4c8749f815584d23142b121fd5d7a2d3063875ec389de77fb"
+    },
+    ".gitignore": {
+      "origin": "release_assets/github/.gitignore",
+      "sha256": "6e21e2cf135676f287617792cd55045d7b47a6790784d395bc8d2d861aa7570b"
+    },
+    "docs/ALGORITHM.md": {
+      "origin": "release_assets/github/docs/ALGORITHM.md",
+      "sha256": "5cf03164d99503beea363039d4e2aa9436c3d368f311f166fea9ccabb4fba3fb"
+    },
+    "docs/DATA.md": {
+      "origin": "release_assets/github/docs/DATA.md",
+      "sha256": "e83f4a08c00b942131d80c0ff182768e62628966bd9d4bb05ba303b0cf52ff17"
+    },
+    "docs/PUBLISH_CHECKLIST.md": {
+      "origin": "release_assets/github/docs/PUBLISH_CHECKLIST.md",
+      "sha256": "68fce86807313beae6de3a713d458c234464b975d2c01478477bc7668a020017"
+    },
+    "docs/REPRODUCIBILITY.md": {
+      "origin": "release_assets/github/docs/REPRODUCIBILITY.md",
+      "sha256": "8a788320b7b19237f75cdbd4cf7599f886542762861e0fc5f424577711c4fe43"
+    },
+    "outputs/.gitkeep": {
+      "origin": "release_assets/github/outputs/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "README.md": {
+      "origin": "release_assets/github/README.md",
+      "sha256": "496ae44595ea8b2dbf4eaaac5784a8b5c8b6f7b2556c0a2a96c9d32cff721216"
+    },
+    "requirements.txt": {
+      "origin": "release_assets/github/requirements.txt",
+      "sha256": "d83e64809a784c35ba5cc8ce9bc9bfcef1c01053e47f1e05dca59c0dafe52a3a"
+    },
+    "scripts/run_hckri.py": {
+      "origin": "release_assets/github/scripts/run_hckri.py",
+      "sha256": "4b91a525f77fc9f4115e29b31661f46eb47ee12a62d8f4a3bb166955715f9d01"
+    },
+    "tests/test_release_entry.py": {
+      "origin": "release_assets/github/tests/test_release_entry.py",
+      "sha256": "0c83ad219a27fccc94af8037a2e4c77f30ecc4fe19bf86c8c234e5441260ef97"
+    },
+    "configs/ton_iot.json": {
+      "origin": "outputs/three_dataset_semi_grid_5090_20261107/ton_iot/base_config.json",
+      "changes": [
+        "repository-relative data/output paths",
+        "disable automatic download and synthetic fallback",
+        "auto device selection"
+      ],
+      "sha256": "c6aa70ab5dcd2c3f6d23e4b3c73465a00b82a3d85467280f28aaca574e253f34"
+    },
+    "configs/edge_iiot.json": {
+      "origin": "outputs/three_dataset_semi_grid_5090_20261107/edge_iiot/base_config.json",
+      "changes": [
+        "repository-relative data/output paths",
+        "disable automatic download and synthetic fallback",
+        "auto device selection"
+      ],
+      "sha256": "5e85b0f7d7ee681f5733ffa969d302f1384b0a5fa70d526c35c97c2837152453"
+    },
+    "configs/psad.json": {
+      "origin": "outputs/three_dataset_semi_grid_5090_20261107/psad/base_config.json",
+      "changes": [
+        "repository-relative data/output paths",
+        "disable automatic download and synthetic fallback",
+        "auto device selection"
+      ],
+      "sha256": "e6da9eb30f39f58dc3c5bdb3d1b3e4f90a5f29a8f99ea9aec9516aea83052e48"
+    },
+    "configs/smoke.json": {
+      "origin": "generated synthetic-only CPU flow check",
+      "sha256": "096a783d53f70c3f6f60c8bae9c380e24fbca503045877acc7d32cff22e14c9d"
+    },
+    "VERIFICATION.json": {
+      "origin": "generated release verification summary",
+      "sha256": "52bd172415762e366404ddbc83c0baf0bce9d580ba4c8e0fa776c2f5d2ee949c"
+    }
+  },
+  "validation": {
+    "unit_tests_passed": 28,
+    "synthetic_trainings_completed": 12
+  }
+}
